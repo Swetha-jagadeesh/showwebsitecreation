@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header class="dark-header">
+    <div class="logo">
+      <img src="images/logo.png" alt="Shoe Store Logo">
+      <h1>SJ Shoe World</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">Kids</a></li>
+      </ul>
+    </nav>
+    <div class="search-cart">
+      <input type="text" placeholder="Search for shoes">
+      <a href="#" class="cart-icon"><img src="images/cart.jpg" alt="Shopping Cart"></a>
+    </div>
+  </header>
+  <script>
+    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+    const nav = document.querySelector('nav');
+
+    mobileMenuToggle.addEventListener('click', () => {
+      nav.classList.toggle('show-mobile-menu');
+    });
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <section class="hero dark-hero">
+    <div class="hero-content">
+      <h1>Step into Style</h1>
+      <p>Discover the perfect pair of shoes for any occasion.</p>
+      <a href="#" class="cta-button">Shop Now</a>
+    </div>
+  </section>
+  <script>
+    // JavaScript code
+    document.getElementById("shop-now-button").addEventListener("click", function() {
+      alert("Button clicked! You can add more functionality here.");
+    });
+  </script>
+</body>
+</html>
+
+  <script>
+    // JavaScript code for search functionality
+    document.getElementById('searchInput').addEventListener('input', function() {
+      var searchValue = this.value.toLowerCase();
+      var menuItems = document.querySelectorAll('nav ul li a');
+      
+      menuItems.forEach(function(item) {
+        var menuItemText = item.textContent.toLowerCase();
+        if (menuItemText.includes(searchValue) || searchValue === "") {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <section class="about-us dark-about">
+    <h2>About Us</h2>
+    <div class="about-content">
+      <p>Welcome to SJ Shoe World, your destination for the latest and trendiest footwear. We are passionate about providing top-quality shoes for every occasion, and we've been doing it for over a decade. Our mission is to help you step into style with confidence.</p>
+      <p>At SJ Shoe World, we believe that the right pair of shoes can make all the difference. Our dedicated team of experts is here to assist you in finding the perfect footwear to match your style and needs.</p>
+    </div>
+  </section>
+  <script>
+    // JavaScript code to change the background color when clicked
+    const aboutSection = document.getElementById('about-section');
+
+    aboutSection.addEventListener('click', function() {
+      aboutSection.style.backgroundColor = '#444'; // Change the background color to a darker shade
+    });
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <section class="shop-by-category dark-category">
+    <h2>Shop by Category</h2>
+    <div class="category-grid">
+      <div class="category-card">
+        <img src="images/img 16.jpg" alt="Men's Shoes">
+        <h3>Men</h3>
+        <a href="#" class="category-link">Shop Now</a>
+      </div>
+      <div class="category-card">
+        <img src="images/lady.jpg" alt="Women's Shoes">
+        <h3>Women</h3>
+        <a href="#" class="category-link">Shop Now</a>
+      </div>
+      <div class="category-card">
+        <img src="images/kid.jpeg" alt="Kids' Shoes">
+        <h3>Kids</h3>
+        <a href="#" class="category-link">Shop Now</a>
+      </div>
+    </div>
+  </section>
+  <script>
+    // JavaScript code to handle category card clicks
+    const categoryCards = document.querySelectorAll('.category-card');
+  
+    categoryCards.forEach(card => {
+      card.addEventListener('click', function() {
+        const categoryTitle = card.querySelector('h3').textContent;
+        alert(`Clicked on ${categoryTitle} category! You can add more functionality here.`);
+      });
+    });
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <section class="testimonials dark-testimonials">
+    <h2>Customer Testimonials</h2>
+    <div class="testimonial-card">
+      <img src="images/customer 1.jpg" alt="Customer 1">
+      <p>"I love the variety of shoes available at Shoe Store. Great quality and excellent service!"</p>
+      <p><strong>John Doe</strong></p>
+    </div>
+    <div class="testimonial-card">
+      <img src="images/Customer 2.jpg" alt="Customer 2">
+      <p>"Shoe Store is my go-to place for finding stylish and comfortable shoes. Highly recommended!"</p>
+      <p><strong>Jane Smith</strong></p>
+    </div>
+  </section>
+  <script>
+    // JavaScript code for a simple testimonial slideshow
+    const testimonialCards = document.querySelectorAll('.testimonial-card');
+    let currentSlide = 0;
+  
+    function showSlide(slideIndex) {
+      testimonialCards.forEach(card => {
+        card.style.display = 'none';
+      });
+      testimonialCards[slideIndex].style.display = 'block';
+    }
+  
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % testimonialCards.length;
+      showSlide(currentSlide);
+    }
+  
+    function previousSlide() {
+      currentSlide = (currentSlide - 1 + testimonialCards.length) % testimonialCards.length;
+      showSlide(currentSlide);
+    }
+  
+    // Initial display
+    showSlide(currentSlide);
+  
+    // Auto-advance the slides (you can adjust the interval)
+    setInterval(nextSlide, 5000);
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <section class="newsletter dark-newsletter">
+    <h2>Subscribe to Our Newsletter</h2>
+    <p>Stay updated with the latest shoe trends, exclusive offers, and more.</p>
+    <form class="newsletter-form" action="subscribe.php" method="post">
+      <input type="email" name="email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+  <script>
+    // JavaScript code to handle newsletter subscription form
+    const newsletterForm = document.querySelector('.newsletter-form');
+    const emailInput = newsletterForm.querySelector('input[type="email"]');
+    const subscribeButton = newsletterForm.querySelector('button');
+  
+    newsletterForm.addEventListener('submit', function (e) {
+      e.preventDefault(); // Prevent the default form submission behavior
+  
+      // You can add more complex validation here if needed
+      const email = emailInput.value;
+      if (validateEmail(email)) {
+        displayConfirmation();
+      } else {
+        alert('Please enter a valid email address.');
+      }
+    });
+  
+    function validateEmail(email) {
+      const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+      return emailPattern.test(email);
+    }
+  
+    function displayConfirmation() {
+      // Replace this alert with your desired confirmation message or actions
+      alert('Thank you for subscribing to our newsletter!');
+      // You can also send the form data to a server for processing here
+    }
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <section class="blog dark-blog">
+    <h2>Blog & Style Tips</h2>
+    <div class="blog-post">
+      <img src="images/Blog post 1.jpg" alt="Blog Post 1">
+      <h3>How to Choose the Perfect Pair of Shoes</h3>
+      <p>Discover the tips and tricks for finding the right shoes for any occasion.</p>
+      <a href="blog-post1.html" class="read-more">Read More</a>
+    </div>
+    <div class="blog-post">
+      <img src="images/Blog post 2.jpg" alt="Blog Post 2">
+      <h3>10 Shoe Care Hacks Every Shoe Lover Should Know</h3>
+      <p>Learn how to keep your shoes looking great with these handy tips.</p>
+      <a href="blog-post2.html" class="read-more">Read More</a>
+    </div>
+  </section>
+    <script>
+    // JavaScript code to toggle "Read More" and "Read Less"
+    const readMoreLinks = document.querySelectorAll('.read-more');
+
+    readMoreLinks.forEach(link => {
+      link.addEventListener('click', function (event) {
+        event.preventDefault();
+        const post = this.parentNode;
+        const content = post.querySelector('p');
+        if (content.style.display === 'none' || content.style.display === '') {
+          content.style.display = 'block';
+          link.textContent = 'Read Less';
+        } else {
+          content.style.display = 'none';
+          link.textContent = 'Read More';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const links = document.querySelectorAll('.footer-section ul li a');
+
+      links.forEach(link => {
+        link.addEventListener('click', function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href').substring(1);
+          const targetElement = document.getElementById(targetId);
+
+          if (targetElement) {
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+  <footer class="dark-footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Contact Us</h4>
+        <p>123 Aranthangi Road</p>
+        <p>Pattukkottai,Thanjavur</p>
+        <p>Email: sjshoeworld@gmail.com</p>
+        <p>Phone: 9876543210</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Follow Us</h4>
+        <a href="#" class="social-icon">Facebook</a>
+        <a href="#" class="social-icon">Twitter</a>
+        <a href="#" class="social-icon">Instagram</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const ctaButton = document.querySelector('.cta-button');
+
+      ctaButton.addEventListener('click', function (e) {
+        e.preventDefault();
+        alert('You clicked the "Shop Now" button!');
+      });
+    });
+  </script>
+</head>
+<body>
+  <section class="cta dark-cta">
+    <div class="cta-content">
+      <h2>Ready to Step into Style?</h2>
+      <p>Explore our shoe collections and find the perfect pair for you.</p>
+      <a href="shop.html" class="cta-button">Shop Now</a>
+    </div>
+  </section>
+</body>
+</html>

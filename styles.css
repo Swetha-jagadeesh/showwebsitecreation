@@ -1,0 +1,515 @@
+.dark-header {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Text color */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .dark-header .logo img {
+    max-width: 40px;
+    height: auto;
+  }
+  
+  .dark-header h1 {
+    font-size: 24px;
+    margin: 0;
+    padding-left: 10px;
+  }
+  
+  .dark-header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .dark-header nav li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  .dark-header a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .dark-header a:hover {
+    text-decoration: underline;
+  }
+  
+  .dark-header .search-cart input {
+    padding: 5px;
+    border: none;
+    background-color: #444; /* Darker background for input */
+    color: #fff;
+  }
+  
+  .dark-header .cart-icon img {
+    max-width: 30px;
+    height: auto;
+    margin-left: 10px;
+  }
+  .mobile-menu-toggle {
+    display: none; /* Hide the mobile menu button by default */
+  }
+  
+  .show-mobile-menu nav {
+    display: block;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .dark-header nav {
+      display: none; /* Hide the navigation menu on small screens */
+    }
+  
+    .mobile-menu-toggle {
+      display: block; /* Show the mobile menu button on small screens */
+      background: none;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      font-size: 24px;
+    }
+  }
+  /* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .hero {
+    background-image: url('images/backgrounds.jpg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+  }
+  
+  .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  h1, p {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-top: 20px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    background-color: #ff6600; /* Button background color */
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  .cta-button:hover {
+    background-color: #e65e00; /* Darker background on hover */
+  }
+  /* styles.css */
+
+.dark-header {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Text color */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .dark-header .logo img {
+    max-width: 40px;
+    height: auto;
+  }
+  
+  .dark-header h1 {
+    font-size: 24px;
+    margin: 0;
+    padding-left: 10px;
+  }
+  
+  .dark-header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .dark-header nav li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  .dark-header a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .dark-header a:hover {
+    text-decoration: underline;
+  }
+  
+  .dark-header .search-cart input {
+    padding: 5px;
+    border: none;
+    background-color: #444; /* Darker background for input */
+    color: #fff;
+  }
+  
+  .dark-header .cart-icon img {
+    max-width: 30px;
+    height: auto;
+    margin-left: 10px;
+  }
+  
+  /* You can add more styles and adjust as needed */
+  /* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .dark-about {
+    background-color: #333; /* Dark background color for the about section */
+    color: #fff; /* Text color for the about section */
+    text-align: center;
+    padding: 100px 0;
+  }
+  
+  .about-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    font-size: 36px;
+    margin: 0;
+    margin-top: 20px;
+  }
+  
+  p {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  /* CSS to change background color when clicked */
+  .dark-about.clicked {
+    background-color: #444;
+  }
+  /* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .dark-category {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Text color */
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .dark-category h2 {
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  
+  .category-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .category-card {
+    background-color: #444; /* Slightly darker background for category cards */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    max-width: 300px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .category-card:hover {
+    background-color: #555; /* Slightly darker background on hover */
+  }
+  
+  .category-card img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .category-card h3 {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  
+  .category-link {
+    display: inline-block;
+    background-color: #ff6600; /* Button background color */
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .category-link:hover {
+    background-color: #e65e00; /* Darker background on hover */
+  }
+  
+  /* Customize and add more category cards as needed */
+  /* You can add more styles and adjust as needed *
+  /* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .dark-testimonials {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Text color */
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .dark-testimonials h2 {
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  
+  .testimonial-card {
+    background-color: #444; /* Slightly darker background for testimonial cards */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    max-width: 300px;
+    display: none; /* Initially hide all testimonial cards */
+  }
+  
+  .testimonial-card img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 50%;
+  }
+  
+  .testimonial-card p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  .testimonial-card strong {
+    font-weight: bold;
+  }
+  
+  /* Customize and add more testimonial cards as needed */
+  /* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .dark-newsletter {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Text color */
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .dark-newsletter h2 {
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  
+  .dark-newsletter p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .newsletter-form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .newsletter-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #444; /* Slightly darker background for input */
+    color: #fff;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+  
+  .newsletter-form button {
+    display: inline-block;
+    background-color: #ff6600; /* Button background color */
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .newsletter-form button:hover {
+    background-color: #e65e00; /* Darker background on hover */
+  }
+  .dark-blog {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Text color */
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .dark-blog h2 {
+    font-size: 24px;
+  }
+  
+  .blog-post {
+    background-color: #444; /* Slightly darker background for blog posts */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    max-width: 300px;
+  }
+  
+  .blog-post img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .blog-post h3 {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  
+  .blog-post p {
+    font-size: 16px;
+    display: none; /* Initially hide the content */
+  }
+  
+  .read-more {
+    display: inline-block;
+    background-color: #ff6600; /* Button background color */
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer; /* Add a pointer cursor to indicate interactivity */
+  }
+  
+  .read-more:hover {
+    background-color: #e65e00; /* Darker background on hover */
+  }
+  .dark-footer {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Text color */
+    padding: 40px 0;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-section {
+    text-align: center;
+  }
+  
+  .dark-footer h4 {
+    font-size: 20px;
+  }
+  
+  .dark-footer p {
+    font-size: 16px;
+    margin: 8px 0;
+  }
+  
+  .dark-footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .dark-footer li {
+    margin: 6px 0;
+  }
+  
+  .social-icon {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin: 10px 0;
+    transition: text-decoration 0.3s; /* Smooth underline transition on hover */
+  }
+  
+  .social-icon:hover {
+    text-decoration: underline;
+  }
+  
+  /* Customize and add more content as needed in your footer */
+  .dark-cta {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Text color */
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .dark-cta h2 {
+    font-size: 24px;
+  }
+  
+  .dark-cta p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    background-color: #ff6600; /* Button background color */
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer; /* Add a pointer cursor to indicate interactivity */
+  }
+  
+  .cta-button:hover {
+    background-color: #e65e00; /* Darker background on hover */
+  }
+  
+  /* Customize and add more content as needed in your CTA section */
